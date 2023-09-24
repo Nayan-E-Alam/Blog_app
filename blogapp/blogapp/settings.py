@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'blog'
 ]
 
 MIDDLEWARE = [
@@ -79,11 +80,8 @@ DATABASES = {
         'NAME': 'myblog',  # Replace with your database name
         'ENFORCE_SCHEMA': True,
         'CLIENT': {
-            'host': 'mongodb+srv://nayanmasters:<password>@cluster0.gz2twez.mongodb.net/?retryWrites=true&w=majority',
-            'port': 27017,
-            'username': 'nayanmasters',
-            'password': 'your-mongodb-password',
-            'authSource': 'admin',
+            'host': 'mongodb+srv://nayanmasters:xAiHkWMNgeoJDGkq@cluster0.gz2twez.mongodb.net/?retryWrites=true&w=majority',
+            
         }
     }
 }
