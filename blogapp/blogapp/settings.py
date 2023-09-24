@@ -75,8 +75,16 @@ WSGI_APPLICATION = 'blogapp.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'djongo',
+        'NAME': 'myblog',  # Replace with your database name
+        'ENFORCE_SCHEMA': True,
+        'CLIENT': {
+            'host': 'mongodb+srv://nayanmasters:<password>@cluster0.gz2twez.mongodb.net/?retryWrites=true&w=majority',
+            'port': 27017,
+            'username': 'nayanmasters',
+            'password': 'your-mongodb-password',
+            'authSource': 'admin',
+        }
     }
 }
 
